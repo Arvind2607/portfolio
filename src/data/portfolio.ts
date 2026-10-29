@@ -225,12 +225,36 @@ export const portfolioData: PortfolioData = {
   ],
 
   // =================================================================
-  // 5. Verified Achievements
+  // 5. Verified Achievements & Certifications
   // =================================================================
   achievements: [
+    "Participant — Y'HACK '26 National Level 24-Hour Hackathon (IEEE Robotics & Automation Society / KPRIET)",
+    'Deloitte — Cyber Job Simulation Certificate (Cybersecurity)',
+    'Third Bridge — Client Service Delivery Job Simulation Certificate',
     'Participant — VISA 24-Hour AI Hackathon (IIT Madras)',
     'Participant — AI Safety Conclave 2025',
     'Student Poster Presentation — IEEE ICRM 2025',
+  ],
+
+  certifications: [
+    {
+      id: 'cert-yhack26',
+      title: "Y'HACK '26 National Level 24-Hour Hackathon",
+      issuer: 'IEEE Robotics & Automation Society / KPRIET',
+      issueDate: 'Sep 2026',
+    },
+    {
+      id: 'cert-deloitte-cyber',
+      title: 'Cyber Job Simulation (Cybersecurity)',
+      issuer: 'Deloitte / Forage',
+      issueDate: 'Apr 2026',
+    },
+    {
+      id: 'cert-third-bridge',
+      title: 'Client Service Delivery Job Simulation',
+      issuer: 'Third Bridge / Forage',
+      issueDate: 'Apr 2026',
+    },
   ],
 
   // =================================================================
