@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://arvind-sb.vercel.app'),
   title: 'Arvind SB | Automotive Software & Embedded Systems',
   description:
-    'Official personal portfolio of Arvind SB — Computer Science & Engineering student at Amrita Vishwa Vidyapeetham. Specializing in Automotive Software Engineering, Embedded Systems, and ADAS.',
+    'Official personal portfolio of Arvind SB — Computer Science & Engineering student at Amrita Vishwa Vidyapeetham. Specializing in Automotive Software Engineering, Embedded Systems, and Automotive AI.',
   authors: [{ name: 'Arvind SB' }],
   keywords: [
     'Arvind SB',
+    'Automotive AI',
     'Automotive Software',
     'Embedded Systems',
-    'ADAS',
     'Computer Science',
     'Amrita Vishwa Vidyapeetham',
     'CAN Bus',

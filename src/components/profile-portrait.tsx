@@ -32,7 +32,7 @@ export function ProfilePortrait({ photoUrl, cutoutPhotoUrl, name }: ProfilePortr
       >
         <Image
           src={imageSrc}
-          alt={`Portrait of ${name} — Software Engineer & ADAS Developer`}
+          alt={`Portrait of ${name} — Automotive AI Engineer & Software Developer`}
           width={540}
           height={680}
           priority

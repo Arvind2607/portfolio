@@ -66,7 +66,7 @@ export function SiteFooter({ personal }: SiteFooterProps) {
             &copy; {new Date().getFullYear()} {personal.fullName}. All rights reserved.
           </div>
           <div className="flex items-center gap-1.5">
-            <span>Automotive Software &bull; Embedded Systems &bull; ADAS</span>
+            <span>Automotive Software &bull; Embedded Systems &bull; Automotive AI</span>
           </div>
         </div>
       </div>

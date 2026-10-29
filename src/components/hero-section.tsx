@@ -44,7 +44,7 @@ export function HeroSection({ personal }: HeroSectionProps) {
         <div className="w-full pt-4 pb-3 border-b border-white/10 flex items-center justify-between text-[11px] font-mono tracking-widest text-gray-400 uppercase mb-8 sm:mb-12">
           <div className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-[#d90f1c]" />
-            <span>SOFTWARE ENGINEER &bull; ADAS</span>
+            <span>SOFTWARE ENGINEER &bull; AUTOMOTIVE AI</span>
           </div>
           <div className="flex items-center gap-1.5 text-gray-300">
             <span className="text-[#d90f1c] text-xs">★</span>
@@ -74,7 +74,7 @@ export function HeroSection({ personal }: HeroSectionProps) {
             {/* Red Uppercase Role Line */}
             <div className="text-xs sm:text-sm font-mono tracking-widest text-[#d90f1c] uppercase font-bold mb-4 flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#d90f1c]" />
-              <span>Software Engineer &amp; ADAS Developer</span>
+              <span>Automotive AI Engineer &amp; Software Developer</span>
             </div>
 
             {/* Shortened Bio (1-2 sentences using existing verified wording) */}
