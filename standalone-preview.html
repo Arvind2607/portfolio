@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-[#080808]">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arvind SB | Automotive Software, Embedded Systems &amp; ADAS</title>
+  <meta name="description" content="Cinematic developer portfolio of Arvind SB — Computer Science &amp; Engineering student at Amrita Vishwa Vidyapeetham, Nagercoil Campus. Focused on Automotive Software, Embedded Systems, and ADAS.">
+  <meta name="author" content="Arvind SB">
+  <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
+
+  <!-- Google Fonts: Anton, Bebas Neue, Caveat (Cursive), Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Caveat:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN for zero-dependency instant browser preview -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#080808',
+              charcoal: '#111111',
+              surface: '#141418',
+              crimson: '#e50920',
+              crimsonHover: '#ff263b',
+            }
+          },
+          fontFamily: {
+            anton: ['"Anton"', '"Bebas Neue"', 'sans-serif'],
+            display: ['"Bebas Neue"', '"Anton"', 'sans-serif'],
+            cursive: ['"Caveat"', 'cursive'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --bg-dark: #080808;
+      --bg-card: #111111;
+      --accent-red: #e50920;
+    }
+    html {
+      scroll-behavior: smooth;
+      background-color: #080808;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      background-color: #080808;
+      color: #f5f5f5;
+    }
+    .font-anton { font-family: 'Anton', 'Bebas Neue', sans-serif; }
+    .font-display { font-family: 'Bebas Neue', sans-serif; }
+    .font-cursive { font-family: 'Caveat', cursive; }
+
+    ::-webkit-scrollbar { width: 7px; }
+    ::-webkit-scrollbar-track { background: #080808; }
+    ::-webkit-scrollbar-thumb { background: #1a1a1f; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #e50920; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#080808] text-[#f5f5f5] antialiased selection:bg-[#e50920] selection:text-white">
+
+  <!-- =============================================================
+       SECTION A — HEADER (Matching Reference Exactly)
+       ============================================================= -->
+  <header class="w-full bg-[#080808] border-b border-white/10 z-40 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      
+      <!-- Left: Role in small crimson uppercase text + secondary descriptor -->
+      <div class="flex flex-col">
+        <span class="text-[#e50920] text-[11px] sm:text-xs font-black tracking-[0.2em] uppercase font-sans">
+          AUTOMOTIVE SOFTWARE &amp; CS ENGINEER
+        </span>
+        <span class="text-[#888888] text-[10px] sm:text-[11px] font-semibold tracking-wider uppercase mt-0.5 font-sans">
+          STUDENT &amp; EMBEDDED SYSTEMS DEVELOPER
+        </span>
+      </div>
+
+      <!-- Right: Availability indicator + subtle crimson sparkle -->
+      <div class="flex items-center gap-3">
+        <div class="inline-flex items-center gap-2">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#e50920] opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-[#e50920]"></span>
+          </span>
+          <span class="text-white text-[10px] sm:text-xs font-bold tracking-[0.18em] uppercase font-sans">
+            AVAILABLE FOR OPPORTUNITIES
+          </span>
+        </div>
+
+        <svg class="w-3.5 h-3.5 text-[#e50920] shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"/>
+        </svg>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =============================================================
+       SECTION B — CINEMATIC HERO (Matching Reference Image)
+       ============================================================= -->
+  <section id="hero" class="relative min-h-[90vh] bg-[#080808] flex flex-col justify-end overflow-hidden border-b border-white/10 pt-8 pb-4 sm:pb-8" aria-label="Hero Introduction">
+    
+    <!-- 1. GIGANTIC CRIMSON CONDENSED "PORTFOLIO" BACKGROUND LAYER -->
+    <div class="absolute top-[8%] sm:top-[10%] left-1/2 -translate-x-1/2 w-full select-none pointer-events-none z-0 flex justify-center items-center" aria-hidden="true">
+      <span class="font-anton tracking-normal text-[#e50920] opacity-90 text-[clamp(6rem,22vw,22rem)] leading-none uppercase text-center whitespace-nowrap drop-shadow-[0_0_80px_rgba(229,9,32,0.45)]">
+        PORTFOLIO
+      </span>
+    </div>
+
+    <!-- Ambient Crimson Aura Glow -->
+    <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#e50920]/15 rounded-full blur-[120px] pointer-events-none z-0"></div>
+
+    <!-- 2. MAIN 3-COLUMN HERO COMPOSITION -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-end">
+        
+        <!-- LEFT COLUMN: Script Greeting, Stacked Name, Title, Bio, Badge -->
+        <div class="order-2 lg:order-1 lg:col-span-4 flex flex-col items-start pb-4 z-20">
+          <span class="font-cursive text-3xl sm:text-4xl text-[#ff808b] -rotate-2 block leading-none mb-1">
+            Hello, I'm
+          </span>
+
+          <h1 class="font-display font-black text-6xl sm:text-7xl xl:text-8xl text-white tracking-wide leading-[0.9] uppercase mb-4">
+            ARVIND<br>
+            <span class="text-white">SB</span>
+          </h1>
+
+          <p class="text-[#e50920] text-xs sm:text-sm font-black tracking-[0.2em] uppercase mb-4">
+            AUTOMOTIVE SOFTWARE &amp; EMBEDDED SYSTEMS
+          </p>
+
+          <p class="text-[#a5a5a5] text-xs sm:text-sm leading-relaxed max-w-sm mb-6">
+            Passionate Computer Science engineering student at Amrita Vishwa Vidyapeetham with a focused drive in Automotive Software Engineering, Embedded Systems, and ADAS. Crafting reliable, high-performance software at the frontier of smart mobility.
+          </p>
+
+          <!-- Availability & Location Badge -->
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#111111] border border-white/10 text-white text-[10px] sm:text-xs font-bold tracking-wider uppercase">
+            <svg class="w-3.5 h-3.5 text-[#e50920]" viewBox="0 0 24 24" fill="currentColor">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+              <line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
+            <span>NAGERCOIL, INDIA • AVAILABLE</span>
+          </div>
+
+          <!-- Portrait View Toggle Buttons -->
+          <div class="mt-4 flex items-center gap-2 text-[10px] font-semibold text-[#666666]">
+            <span>Portrait View:</span>
+            <button id="btn-studio-photo" type="button" class="px-2 py-0.5 rounded text-[10px] uppercase tracking-wider bg-[#e50920] text-white font-bold transition-colors">
+              Studio
+            </button>
+            <button id="btn-campus-photo" type="button" class="px-2 py-0.5 rounded text-[10px] uppercase tracking-wider bg-white/5 text-[#888888] hover:text-white transition-colors">
+              Campus
+            </button>
+          </div>
+        </div>
+
+        <!-- CENTER COLUMN: Visually Dominant Portrait Overlapping Text -->
+        <div class="order-1 lg:order-2 lg:col-span-5 flex justify-center items-end relative z-10 -mb-2">
+          <div class="relative w-full max-w-[420px] sm:max-w-[480px] flex justify-center items-end group">
+            <img 
+              id="hero-portrait-img"
+              src="public/assets/images/hero-portrait-studio.jpg" 
+              alt="Arvind SB — Portfolio Portrait" 
+              class="relative z-10 w-full max-h-[640px] object-contain object-bottom filter drop-shadow-[0_20px_50px_rgba(0,0,0,0.95)] transition-transform duration-500 group-hover:scale-[1.01]"
+              onerror="this.src='public/assets/images/arvind-portrait.jpg';"
+            >
+            <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#080808] to-transparent z-20 pointer-events-none"></div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Creative Statement & Stacked Statistics -->
+        <div class="order-3 lg:col-span-3 flex flex-col items-start pb-6 z-20">
+          <div class="flex items-start gap-2.5 mb-8 max-w-[260px]">
+            <svg class="w-4 h-4 text-[#e50920] shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"/>
+            </svg>
+            <p class="text-xs text-[#f5f5f5] font-medium leading-relaxed">
+              Turning ideas into robust, high-performance systems.
+            </p>
+          </div>
+
+          <!-- Vertical Stack of 3 Factual Statistics / Highlights -->
+          <div class="flex flex-col gap-6 w-full">
+            <div class="flex items-baseline gap-3.5">
+              <span class="font-display font-black text-4xl sm:text-5xl text-[#e50920] leading-none min-w-[70px]">
+                3+
+              </span>
+              <span class="text-[10px] sm:text-[11px] font-black tracking-[0.18em] text-[#f5f5f5] uppercase leading-tight font-sans">
+                FOCUS<br>DOMAINS
+              </span>
+            </div>
+
+            <div class="flex items-baseline gap-3.5">
+              <span class="font-display font-black text-4xl sm:text-5xl text-[#e50920] leading-none min-w-[70px]">
+                B.Tech
+              </span>
+              <span class="text-[10px] sm:text-[11px] font-black tracking-[0.18em] text-[#f5f5f5] uppercase leading-tight font-sans">
+                CSE STUDENT<br>AMRITA UNIV
+              </span>
+            </div>
+
+            <div class="flex items-baseline gap-3.5">
+              <span class="font-display font-black text-4xl sm:text-5xl text-[#e50920] leading-none min-w-[70px]">
+                100%
+              </span>
+              <span class="text-[10px] sm:text-[11px] font-black tracking-[0.18em] text-[#f5f5f5] uppercase leading-tight font-sans">
+                COMMITMENT &amp;<br>PRECISION
+              </span>
+            </div>
+          </div>
+
+          <!-- View Selected Work link -->
+          <a href="#projects" class="mt-10 inline-flex items-center gap-2 text-[10px] font-bold tracking-[0.2em] uppercase text-[#888888] hover:text-[#e50920] transition-colors group">
+            <span>VIEW SELECTED WORK</span>
+            <svg class="w-3.5 h-3.5 transform group-hover:translate-y-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================================
+       SECTION C — SELECTED PROJECTS (3 Landscape Cards)
+       ============================================================= -->
+  <section id="projects" class="py-16 sm:py-20 bg-[#080808] border-b border-white/10" aria-label="Selected Projects">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex items-center justify-between gap-6 mb-10 sm:mb-14">
+        <h2 class="text-white font-extrabold text-sm sm:text-base tracking-[0.2em] uppercase whitespace-nowrap">
+          SELECTED PROJECTS
+        </h2>
+        <div class="flex-grow h-px bg-white/15 hidden sm:block"></div>
+        <a href="https://github.com/Arvind2607" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-2 text-xs font-bold tracking-[0.18em] uppercase text-[#a5a5a5] hover:text-[#e50920] transition-colors whitespace-nowrap">
+          <span>VIEW ALL PROJECTS</span>
+          <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+        </a>
+      </div>
+
+      <!-- 3 Horizontal Project Cards on Desktop -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        
+        <!-- CARD 01: FOOD DELIVERY TIME PREDICTION -->
+        <article class="project-card group cursor-pointer flex flex-col focus:outline-none focus:ring-2 focus:ring-[#e50920] rounded-lg" data-project="0" tabindex="0">
+          <div class="relative w-full aspect-[16/10] bg-[#111111] border border-white/10 rounded-sm overflow-hidden mb-4 transition-all duration-300 group-hover:border-[#e50920]/60 shadow-[0_10px_30px_rgba(0,0,0,0.6)]">
+            <img src="public/assets/images/project-fooddelivery.svg" alt="Food Delivery Time Predictor" class="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-[#080808]/80 backdrop-blur-md border border-white/15 text-[10px] font-bold text-[#f5f5f5] tracking-wider uppercase">
+              Live Deployed
+            </div>
+          </div>
+          <div class="flex items-start justify-between gap-4 pt-1">
+            <div class="flex items-baseline gap-3 sm:gap-4">
+              <span class="font-display font-black text-2xl sm:text-3xl text-[#e50920] leading-none shrink-0">01</span>
+              <div class="flex flex-col">
+                <h3 class="font-sans text-white font-extrabold text-sm sm:text-base uppercase tracking-wider group-hover:text-[#e50920] transition-colors leading-tight">
+                  FOOD DELIVERY PREDICTOR
+                </h3>
+                <p class="text-[#a5a5a5] text-[11px] sm:text-xs font-semibold uppercase tracking-wider mt-0.5">
+                  ML REGRESSION &amp; DEPLOYED APP
+                </p>
+              </div>
+            </div>
+            <div class="text-white/60 group-hover:text-[#e50920] text-sm sm:text-base font-bold transform group-hover:translate-x-1.5 transition-all shrink-0 mt-0.5">
+              →
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 02: CAN BUS TELEMETRY DECODER -->
+        <article class="project-card group cursor-pointer flex flex-col focus:outline-none focus:ring-2 focus:ring-[#e50920] rounded-lg" data-project="1" tabindex="0">
+          <div class="relative w-full aspect-[16/10] bg-[#111111] border border-white/10 rounded-sm overflow-hidden mb-4 transition-all duration-300 group-hover:border-[#e50920]/60 shadow-[0_10px_30px_rgba(0,0,0,0.6)]">
+            <img src="public/assets/images/project-telemetry.svg" alt="CAN Bus Telemetry Decoder" class="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-[#080808]/80 backdrop-blur-md border border-white/15 text-[10px] font-bold text-[#f5f5f5] tracking-wider uppercase">
+              Automotive Tech
+            </div>
+          </div>
+          <div class="flex items-start justify-between gap-4 pt-1">
+            <div class="flex items-baseline gap-3 sm:gap-4">
+              <span class="font-display font-black text-2xl sm:text-3xl text-[#e50920] leading-none shrink-0">02</span>
+              <div class="flex flex-col">
+                <h3 class="font-sans text-white font-extrabold text-sm sm:text-base uppercase tracking-wider group-hover:text-[#e50920] transition-colors leading-tight">
+                  CAN BUS TELEMETRY DECODER
+                </h3>
+                <p class="text-[#a5a5a5] text-[11px] sm:text-xs font-semibold uppercase tracking-wider mt-0.5">
+                  AUTOMOTIVE SYSTEMS &amp; C++
+                </p>
+              </div>
+            </div>
+            <div class="text-white/60 group-hover:text-[#e50920] text-sm sm:text-base font-bold transform group-hover:translate-x-1.5 transition-all shrink-0 mt-0.5">
+              →
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 03: EV POWERTRAIN & SENSOR MONITOR -->
+        <article class="project-card group cursor-pointer flex flex-col focus:outline-none focus:ring-2 focus:ring-[#e50920] rounded-lg" data-project="2" tabindex="0">
+          <div class="relative w-full aspect-[16/10] bg-[#111111] border border-white/10 rounded-sm overflow-hidden mb-4 transition-all duration-300 group-hover:border-[#e50920]/60 shadow-[0_10px_30px_rgba(0,0,0,0.6)]">
+            <img src="public/assets/images/project-evpowertrain.svg" alt="EV Powertrain & Sensor Monitor" class="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-[#080808]/80 backdrop-blur-md border border-white/15 text-[10px] font-bold text-[#f5f5f5] tracking-wider uppercase">
+              Embedded Systems
+            </div>
+          </div>
+          <div class="flex items-start justify-between gap-4 pt-1">
+            <div class="flex items-baseline gap-3 sm:gap-4">
+              <span class="font-display font-black text-2xl sm:text-3xl text-[#e50920] leading-none shrink-0">03</span>
+              <div class="flex flex-col">
+                <h3 class="font-sans text-white font-extrabold text-sm sm:text-base uppercase tracking-wider group-hover:text-[#e50920] transition-colors leading-tight">
+                  EV POWERTRAIN MONITOR
+                </h3>
+                <p class="text-[#a5a5a5] text-[11px] sm:text-xs font-semibold uppercase tracking-wider mt-0.5">
+                  EMBEDDED SYSTEMS &amp; IOT
+                </p>
+              </div>
+            </div>
+            <div class="text-white/60 group-hover:text-[#e50920] text-sm sm:text-base font-bold transform group-hover:translate-x-1.5 transition-all shrink-0 mt-0.5">
+              →
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================================
+       SECTION D & E — EDUCATION, SKILLS, WORK PROCESS & QUOTE PANEL
+       ============================================================= -->
+  <section id="education-process" class="py-16 sm:py-20 bg-[#080808] border-b border-white/10" aria-label="Education, Process, and Philosophy">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12 items-start">
+        
+        <!-- COLUMN 1: EDUCATION & SKILLS -->
+        <div class="lg:col-span-4 flex flex-col">
+          <h2 class="text-white font-extrabold text-sm sm:text-base tracking-[0.2em] uppercase mb-8 pb-3 border-b border-white/10">
+            EDUCATION &amp; SKILLS
+          </h2>
+
+          <div class="mb-8">
+            <span class="text-[#e50920] text-[11px] font-black tracking-[0.2em] uppercase block mb-4">
+              EDUCATION
+            </span>
+
+            <div class="space-y-6">
+              <div class="flex justify-between items-start gap-4">
+                <div class="flex flex-col">
+                  <h3 class="text-white font-extrabold text-sm sm:text-[15px] leading-snug">
+                    B.Tech in Computer Science and Engineering
+                  </h3>
+                  <p class="text-[#a5a5a5] text-xs font-medium mt-1">
+                    Amrita Vishwa Vidyapeetham, Nagercoil Campus
+                  </p>
+                </div>
+                <span class="text-[#e50920] text-xs font-bold shrink-0 tracking-wider">
+                  2024 – 2028
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full h-px bg-white/10 mb-8"></div>
+
+          <div>
+            <span class="text-[#e50920] text-[11px] font-black tracking-[0.2em] uppercase block mb-4">
+              SKILLS
+            </span>
+
+            <div class="flex flex-wrap gap-2 sm:gap-2.5">
+              <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">JAVA</span>
+              <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">PYTHON</span>
+              <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">C / C++</span>
+              <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">HTML5 / CSS3</span>
+              <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">REACT</span>
+              <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">TAILWIND CSS</span>
+              <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">EMBEDDED SYSTEMS</span>
+              <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">CAN BUS PROTOCOL</span>
+              <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">ADAS CONCEPTS</span>
+              <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">GIT &amp; GITHUB</span>
+              <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">LINUX / CLI</span>
+              <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">VS CODE</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUMN 2: WORK PROCESS (5 Steps) -->
+        <div class="lg:col-span-5 flex flex-col">
+          <h2 class="text-white font-extrabold text-sm sm:text-base tracking-[0.2em] uppercase mb-8 pb-3 border-b border-white/10">
+            WORK PROCESS
+          </h2>
+
+          <div class="relative flex flex-col space-y-6 sm:space-y-7">
+            <!-- Connecting vertical line -->
+            <div class="absolute left-[39px] sm:left-[43px] top-6 bottom-6 w-px bg-white/15 -z-0" aria-hidden="true"></div>
+
+            <!-- Step 01 -->
+            <div class="relative z-10 flex items-start gap-4 sm:gap-5">
+              <span class="font-display font-black text-lg sm:text-xl text-[#e50920] leading-none shrink-0 w-6 pt-2">01</span>
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#080808] border border-white/20 flex items-center justify-center shrink-0 shadow-[0_0_12px_rgba(0,0,0,0.8)]">
+                <svg class="w-4 h-4 text-[#e50920]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <div class="flex flex-col pt-0.5">
+                <h3 class="text-white font-black text-xs sm:text-sm tracking-wider uppercase">DISCOVER</h3>
+                <p class="text-[#a5a5a5] text-xs leading-relaxed mt-1">Understanding requirements, ECU constraints, sensor protocols, and project objectives.</p>
+              </div>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="relative z-10 flex items-start gap-4 sm:gap-5">
+              <span class="font-display font-black text-lg sm:text-xl text-[#e50920] leading-none shrink-0 w-6 pt-2">02</span>
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#080808] border border-white/20 flex items-center justify-center shrink-0 shadow-[0_0_12px_rgba(0,0,0,0.8)]">
+                <svg class="w-4 h-4 text-[#e50920]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <div class="flex flex-col pt-0.5">
+                <h3 class="text-white font-black text-xs sm:text-sm tracking-wider uppercase">PLAN &amp; ARCHITECTURE</h3>
+                <p class="text-[#a5a5a5] text-xs leading-relaxed mt-1">Designing modular system architecture, communication bus frames, and telemetry data models.</p>
+              </div>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="relative z-10 flex items-start gap-4 sm:gap-5">
+              <span class="font-display font-black text-lg sm:text-xl text-[#e50920] leading-none shrink-0 w-6 pt-2">03</span>
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#080808] border border-white/20 flex items-center justify-center shrink-0 shadow-[0_0_12px_rgba(0,0,0,0.8)]">
+                <svg class="w-4 h-4 text-[#e50920]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+              </div>
+              <div class="flex flex-col pt-0.5">
+                <h3 class="text-white font-black text-xs sm:text-sm tracking-wider uppercase">DEVELOP &amp; CODE</h3>
+                <p class="text-[#a5a5a5] text-xs leading-relaxed mt-1">Writing high-efficiency, clean, and structured code across C/C++, Python, Java, and modern web tools.</p>
+              </div>
+            </div>
+
+            <!-- Step 04 -->
+            <div class="relative z-10 flex items-start gap-4 sm:gap-5">
+              <span class="font-display font-black text-lg sm:text-xl text-[#e50920] leading-none shrink-0 w-6 pt-2">04</span>
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#080808] border border-white/20 flex items-center justify-center shrink-0 shadow-[0_0_12px_rgba(0,0,0,0.8)]">
+                <svg class="w-4 h-4 text-[#e50920]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div class="flex flex-col pt-0.5">
+                <h3 class="text-white font-black text-xs sm:text-sm tracking-wider uppercase">TEST &amp; VALIDATE</h3>
+                <p class="text-[#a5a5a5] text-xs leading-relaxed mt-1">Rigorous validation, sensor edge-case simulation, unit testing, and memory leak checks.</p>
+              </div>
+            </div>
+
+            <!-- Step 05 -->
+            <div class="relative z-10 flex items-start gap-4 sm:gap-5">
+              <span class="font-display font-black text-lg sm:text-xl text-[#e50920] leading-none shrink-0 w-6 pt-2">05</span>
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#080808] border border-white/20 flex items-center justify-center shrink-0 shadow-[0_0_12px_rgba(0,0,0,0.8)]">
+                <svg class="w-4 h-4 text-[#e50920]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                </svg>
+              </div>
+              <div class="flex flex-col pt-0.5">
+                <h3 class="text-white font-black text-xs sm:text-sm tracking-wider uppercase">DEPLOY &amp; INTEGRATE</h3>
+                <p class="text-[#a5a5a5] text-xs leading-relaxed mt-1">Flashing firmware onto target microcontrollers or deploying cloud-connected web services.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- COLUMN 3: CRIMSON PERSONAL QUOTE PANEL -->
+        <div class="lg:col-span-3 flex flex-col justify-between p-7 sm:p-8 rounded-sm bg-gradient-to-b from-[#240609] via-[#170406] to-[#0c0203] border border-[#e50920]/40 shadow-[0_15px_40px_rgba(229,9,32,0.15)] min-h-[460px]">
+          <div>
+            <div class="text-6xl sm:text-7xl font-serif text-[#e50920] font-black leading-none select-none mb-4" aria-hidden="true">
+              “
+            </div>
+            <p class="text-white text-sm sm:text-base font-medium leading-relaxed mb-6">
+              Engineering software is not just about making code work—it is about crafting safe, high-precision systems that move the world forward.
+            </p>
+            <div class="font-cursive text-3xl sm:text-4xl text-white tracking-wide">
+              Arvind SB
+            </div>
+          </div>
+
+          <div class="pt-8 border-t border-[#e50920]/30 mt-8">
+            <p class="text-[#ff949d] text-[10px] font-black tracking-[0.2em] uppercase leading-tight">
+              LET'S CREATE SOMETHING GREAT TOGETHER.
+            </p>
+            <span class="text-[#e50920] text-sm font-bold block mt-1">✦</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================================
+       SECTION F — CONTACT ("LET'S WORK TOGETHER")
+       ============================================================= -->
+  <section id="contact" class="py-16 sm:py-24 bg-[#080808] border-b border-white/10" aria-label="Contact and Collaboration">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-14 items-center">
+        
+        <!-- LEFT COLUMN: Heading & Availability -->
+        <div class="lg:col-span-4 flex flex-col items-start">
+          <div class="flex items-center gap-2 mb-4">
+            <h2 class="font-display font-black text-4xl sm:text-5xl text-white tracking-wide uppercase leading-none">
+              LET'S WORK<br>TOGETHER
+            </h2>
+            <svg class="w-5 h-5 text-[#e50920] shrink-0 self-start mt-1" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"/>
+            </svg>
+          </div>
+
+          <p class="text-[#a5a5a5] text-xs sm:text-sm leading-relaxed max-w-sm mb-8">
+            I am currently open for summer internships, automotive software research, and engineering collaborations. Let's create something extraordinary that drives results.
+          </p>
+
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[#e50920] bg-[#e50920]/10 text-white text-xs font-bold tracking-wider uppercase">
+            <span class="text-[#e50920]">→</span>
+            <span>AVAILABLE FOR OPPORTUNITIES</span>
+          </div>
+        </div>
+
+        <!-- MIDDLE COLUMN: Email, Copy Email, GitHub, LinkedIn space, Location -->
+        <div class="lg:col-span-4 flex flex-col space-y-5">
+          <!-- Email -->
+          <div class="flex flex-col space-y-2">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-[#111111] border border-[#e50920]/40 flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4 text-[#e50920]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <a href="mailto:sbarvind2006@gmail.com" class="text-white hover:text-[#e50920] text-xs sm:text-sm font-semibold tracking-wider transition-colors break-all">
+                sbarvind2006@gmail.com
+              </a>
+            </div>
+
+            <!-- Copy Email Button -->
+            <div class="pl-12 flex items-center gap-3">
+              <button id="copy-email-btn" type="button" class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-[#16161c] hover:bg-[#202028] border border-white/10 hover:border-[#e50920] text-[11px] font-bold text-[#cccccc] hover:text-white uppercase tracking-wider transition-all">
+                <svg class="w-3.5 h-3.5 text-[#e50920]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                <span id="copy-text">Copy Email</span>
+              </button>
+              <span id="copy-toast" class="hidden text-[11px] font-bold text-emerald-400">
+                ✓ Copied to clipboard!
+              </span>
+            </div>
+          </div>
+
+          <!-- GitHub Profile -->
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-[#111111] border border-[#e50920]/40 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 text-[#e50920]" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </div>
+            <a href="https://github.com/Arvind2607" target="_blank" rel="noopener noreferrer" class="text-white hover:text-[#e50920] text-xs sm:text-sm font-semibold tracking-wider transition-colors">
+              github.com/Arvind2607
+            </a>
+          </div>
+
+          <!-- SPACE FOR LINKEDIN ID -->
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-[#111111] border border-[#e50920]/40 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 text-[#e50920]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </div>
+            <a href="https://linkedin.com/in/YOUR_LINKEDIN_ID" target="_blank" rel="noopener noreferrer" class="text-[#e50920] hover:underline text-xs sm:text-sm font-bold tracking-wider transition-colors">
+              [Add LinkedIn Profile URL]
+            </a>
+          </div>
+
+          <!-- Location -->
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-[#111111] border border-[#e50920]/40 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 text-[#e50920]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <span class="text-[#a5a5a5] text-xs sm:text-sm font-semibold tracking-wide">
+              Amrita Vishwa Vidyapeetham, Nagercoil, Tamil Nadu, India
+            </span>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Laptop Mockup -->
+        <div class="lg:col-span-4 flex justify-center lg:justify-end">
+          <div class="w-full max-w-[380px] sm:max-w-[420px] filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.9)]">
+            <img src="public/assets/images/laptop-mockup.svg" alt="Arvind SB Portfolio Laptop Mockup" class="w-full h-auto object-contain" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================================
+       FOOTER
+       ============================================================= -->
+  <footer class="w-full bg-[#080808] py-8 text-[#888888]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-semibold tracking-wider">
+      <div class="flex items-center gap-2">
+        <span class="text-[#e50920] font-black font-display text-base">ASB</span>
+        <span class="text-white/80">
+          ARVIND SB © 2026. ALL RIGHTS RESERVED.
+        </span>
+      </div>
+      <div class="text-[11px] font-black uppercase tracking-[0.2em] text-[#666666]">
+        CODE • DRIVE • INNOVATE
+      </div>
+      <button id="back-to-top" type="button" class="inline-flex items-center gap-1.5 text-xs text-[#888888] hover:text-[#e50920] transition-colors uppercase font-bold">
+        <span>BACK TO TOP</span>
+        <svg class="w-3.5 h-3.5 text-[#e50920]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- =============================================================
+       INTERACTIVE PROJECT MODAL (Dynamic Vanilla JS)
+       ============================================================= -->
+  <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-md" role="dialog" aria-modal="true">
+    <div class="relative w-full max-w-3xl bg-[#0e0e10] border border-white/15 rounded-xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.9)] max-h-[92vh] flex flex-col" onclick="event.stopPropagation()">
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-[#141418]">
+        <div class="flex items-center gap-3">
+          <span id="modal-num" class="font-display font-black text-2xl text-[#e50920] leading-none">01</span>
+          <span id="modal-cat" class="text-[11px] font-black uppercase tracking-[0.2em] text-[#e50920]">CATEGORY</span>
+        </div>
+        <button id="modal-close-btn" type="button" class="p-1.5 rounded-lg text-[#888888] hover:text-white hover:bg-white/10 transition-colors">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 overflow-y-auto space-y-6">
+        <div class="w-full aspect-[16/9] rounded-lg overflow-hidden bg-[#16161c] border border-white/10">
+          <img id="modal-img" src="" alt="" class="w-full h-full object-cover object-center">
+        </div>
+        <div>
+          <h3 id="modal-title" class="font-display font-black text-3xl sm:text-4xl text-white tracking-wide uppercase mb-1">TITLE</h3>
+          <p id="modal-sub" class="text-[#a5a5a5] text-xs font-bold tracking-widest uppercase">SUBTITLE</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="text-[11px] font-black uppercase tracking-[0.2em] text-[#e50920]">SYSTEM OVERVIEW &amp; OBJECTIVE</h4>
+          <p id="modal-desc" class="text-[#cccccc] text-sm leading-relaxed">Description</p>
+        </div>
+        <div id="modal-metrics-box" class="p-3.5 rounded-lg bg-[#141418] border border-[#e50920]/30 text-xs text-[#f5f5f5] flex items-start gap-2.5">
+          <svg class="w-4 h-4 text-[#e50920] shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"/>
+          </svg>
+          <span id="modal-metrics">Metrics</span>
+        </div>
+        <div>
+          <h4 class="text-[11px] font-black uppercase tracking-[0.2em] text-[#888888] mb-2.5">TECHNOLOGIES USED</h4>
+          <div id="modal-techs" class="flex flex-wrap gap-2"></div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="px-6 py-4 border-t border-white/10 bg-[#141418] flex flex-wrap items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <a id="modal-live-link" href="#" target="_blank" rel="noopener noreferrer" class="hidden inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#e50920] hover:bg-[#ff263b] text-white text-xs font-bold tracking-wider uppercase transition-all">
+            <span>Live Demo</span>
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+          <a id="modal-repo-link" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#1e1e24] hover:bg-[#282832] text-white border border-white/15 hover:border-[#e50920] text-xs font-bold tracking-wider uppercase transition-all">
+            <svg class="w-4 h-4 text-[#e50920]" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+            <span>GitHub Repo</span>
+          </a>
+        </div>
+        <button id="modal-bottom-close" type="button" class="text-xs font-bold text-[#888888] hover:text-white uppercase tracking-wider">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vanilla JavaScript Interactions -->
+  <script>
+    // 1. Projects Data for Modals
+    const projectsData = [
+      {
+        number: '01',
+        title: 'FOOD DELIVERY TIME PREDICTOR',
+        subtitle: 'MACHINE LEARNING & ESTIMATION SUITE',
+        category: 'ML REGRESSION & DEPLOYED APP',
+        description: 'A full-stack predictive ML application engineered to forecast food delivery duration in real-time. Features multi-parameter regression models trained on weather conditions, traffic density, courier distance, and dispatch metrics.',
+        image: 'public/assets/images/project-fooddelivery.svg',
+        technologies: ['Python', 'Machine Learning', 'Scikit-Learn', 'Vercel Deployment'],
+        metrics: 'Live deployed model with real-time inference and sub-second prediction latency.',
+        githubUrl: 'https://github.com/Arvind2607/food-delivery-time-prediction',
+        liveDemoUrl: 'https://food-rosy-nu.vercel.app/'
+      },
+      {
+        number: '02',
+        title: 'CAN BUS TELEMETRY DECODER',
+        subtitle: 'EMBEDDED PROTOCOL & ADAS TELEMATICS',
+        category: 'AUTOMOTIVE SYSTEMS & C++',
+        description: 'A high-throughput vehicle telemetry packet parser written in modern C++ and C. Engineered for decoding raw binary CAN 2.0B / CAN-FD bus frames, parsing engine PIDs, and logging ADAS sensor payloads with minimal latency.',
+        image: 'public/assets/images/project-telemetry.svg',
+        technologies: ['C++', 'C', 'CAN Protocols', 'Embedded Systems', 'Telemetry'],
+        metrics: 'Sub-millisecond frame decoding; zero dynamic heap allocation in time-critical loops.',
+        githubUrl: 'https://github.com/Arvind2607/can-bus-telemetry-decoder',
+        liveDemoUrl: ''
+      },
+      {
+        number: '03',
+        title: 'EV POWERTRAIN & SENSOR MONITOR',
+        subtitle: 'BATTERY MANAGEMENT & TELEMATICS',
+        category: 'EMBEDDED SYSTEMS & IOT',
+        description: 'Embedded monitoring architecture for electric vehicle powertrains. Collects real-time telemetry from battery management systems (BMS), cell temperature arrays, and motor RPM sensors with serial interface output.',
+        image: 'public/assets/images/project-evpowertrain.svg',
+        technologies: ['Embedded C', 'Microcontrollers', 'CAN Bus', 'Sensors', 'IoT'],
+        metrics: 'Continuous cyclic telemetry logging with automated thermal alert thresholds.',
+        githubUrl: 'https://github.com/Arvind2607/ev-powertrain-telematics',
+        liveDemoUrl: ''
+      }
+    ];
+
+    // 2. Photo Toggle Functionality
+    const heroImg = document.getElementById('hero-portrait-img');
+    const btnStudio = document.getElementById('btn-studio-photo');
+    const btnCampus = document.getElementById('btn-campus-photo');
+
+    btnStudio.addEventListener('click', () => {
+      heroImg.src = 'public/assets/images/hero-portrait-studio.jpg';
+      btnStudio.className = 'px-2 py-0.5 rounded text-[10px] uppercase tracking-wider bg-[#e50920] text-white font-bold transition-colors';
+      btnCampus.className = 'px-2 py-0.5 rounded text-[10px] uppercase tracking-wider bg-white/5 text-[#888888] hover:text-white transition-colors';
+    });
+
+    btnCampus.addEventListener('click', () => {
+      heroImg.src = 'public/assets/images/arvind-portrait.jpg';
+      btnCampus.className = 'px-2 py-0.5 rounded text-[10px] uppercase tracking-wider bg-[#e50920] text-white font-bold transition-colors';
+      btnStudio.className = 'px-2 py-0.5 rounded text-[10px] uppercase tracking-wider bg-white/5 text-[#888888] hover:text-white transition-colors';
+    });
+
+    // 3. Project Modal Controls
+    const modal = document.getElementById('project-modal');
+    const modalNum = document.getElementById('modal-num');
+    const modalCat = document.getElementById('modal-cat');
+    const modalImg = document.getElementById('modal-img');
+    const modalTitle = document.getElementById('modal-title');
+    const modalSub = document.getElementById('modal-sub');
+    const modalDesc = document.getElementById('modal-desc');
+    const modalMetrics = document.getElementById('modal-metrics');
+    const modalTechs = document.getElementById('modal-techs');
+    const modalLive = document.getElementById('modal-live-link');
+    const modalRepo = document.getElementById('modal-repo-link');
+
+    function openModal(index) {
+      const p = projectsData[index];
+      if (!p) return;
+      modalNum.textContent = p.number;
+      modalCat.textContent = p.category;
+      modalImg.src = p.image;
+      modalImg.alt = p.title;
+      modalTitle.textContent = p.title;
+      modalSub.textContent = p.subtitle;
+      modalDesc.textContent = p.description;
+      modalMetrics.textContent = p.metrics;
+
+      modalTechs.innerHTML = '';
+      p.technologies.forEach(t => {
+        const span = document.createElement('span');
+        span.className = 'px-3 py-1 rounded bg-[#18181e] border border-white/10 text-xs font-semibold text-white tracking-wider';
+        span.textContent = t;
+        modalTechs.appendChild(span);
+      });
+
+      if (p.liveDemoUrl) {
+        modalLive.href = p.liveDemoUrl;
+        modalLive.classList.remove('hidden');
+      } else {
+        modalLive.classList.add('hidden');
+      }
+
+      modalRepo.href = p.githubUrl;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = 'unset';
+    }
+
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const idx = parseInt(card.getAttribute('data-project'), 10);
+        openModal(idx);
+      });
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          const idx = parseInt(card.getAttribute('data-project'), 10);
+          openModal(idx);
+        }
+      });
+    });
+
+    document.getElementById('modal-close-btn').addEventListener('click', closeModal);
+    document.getElementById('modal-bottom-close').addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
+    });
+
+    // 4. Copy Email Interaction
+    const copyBtn = document.getElementById('copy-email-btn');
+    const copyText = document.getElementById('copy-text');
+    const copyToast = document.getElementById('copy-toast');
+
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText('sbarvind2006@gmail.com');
+        copyText.textContent = 'Copied!';
+        copyToast.classList.remove('hidden');
+        setTimeout(() => {
+          copyText.textContent = 'Copy Email';
+          copyToast.classList.add('hidden');
+        }, 3000);
+      } catch (err) {
+        alert('Email: sbarvind2006@gmail.com');
+      }
+    });
+
+    // 5. Back to Top Scroll
+    document.getElementById('back-to-top').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
