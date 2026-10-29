@@ -75,7 +75,7 @@ export const portfolioData: PortfolioData = {
   },
 
   // =================================================================
-  // 2. Selected Projects (Re-ordered: 2 & 3 swapped with 4 & 5)
+  // 2. Selected Projects (Updated Order: 5 & 6 swapped)
   // =================================================================
   projects: [
     {
@@ -143,24 +143,8 @@ export const portfolioData: PortfolioData = {
       featured: true,
     },
     {
-      id: 'project-tcu-page',
-      number: '05',
-      title: 'TCU TELEMATICS CONSOLE',
-      subtitle: 'TELEMATICS CONTROL UNIT WEB DASHBOARD',
-      category: 'AUTOMOTIVE SYSTEMS & TELEMETRY',
-      description:
-        'In-vehicle Telematics Control Unit (TCU) management portal aggregating real-time CAN bus telemetry, GPS positioning, cellular modem connectivity status, and vehicle health diagnostics.',
-      image: '/assets/images/project-tcupage.svg',
-      technologies: ['Automotive Telematics', 'CAN Bus', 'Web Dashboard', 'Telemetry', 'IoT'],
-      metrics: 'Real-time CAN-FD packet stream monitoring and uplink status indicators.',
-      githubUrl: 'https://github.com/Arvind2607/tcu-telematics-page',
-      liveDemoUrl: '',
-      statusBadge: 'Automotive Tech',
-      featured: true,
-    },
-    {
       id: 'project-haskell-kiosk',
-      number: '06',
+      number: '05',
       title: 'SELF ORDERING KIOSK SYSTEM',
       subtitle: 'FUNCTIONAL ARCHITECTURE IN HASKELL',
       category: 'FUNCTIONAL ARCHITECTURE (λ)',
@@ -172,6 +156,22 @@ export const portfolioData: PortfolioData = {
       githubUrl: 'https://github.com/Arvind2607/haskell-self-ordering-kiosk',
       liveDemoUrl: '',
       statusBadge: 'Haskell (λ)',
+      featured: true,
+    },
+    {
+      id: 'project-tcu-page',
+      number: '06',
+      title: 'TCU TELEMATICS CONSOLE',
+      subtitle: 'TELEMATICS CONTROL UNIT WEB DASHBOARD',
+      category: 'AUTOMOTIVE SYSTEMS & TELEMETRY',
+      description:
+        'In-vehicle Telematics Control Unit (TCU) management portal aggregating real-time CAN bus telemetry, GPS positioning, cellular modem connectivity status, and vehicle health diagnostics.',
+      image: '/assets/images/project-tcupage.svg',
+      technologies: ['Automotive Telematics', 'CAN Bus', 'Web Dashboard', 'Telemetry', 'IoT'],
+      metrics: 'Real-time CAN-FD packet stream monitoring and uplink status indicators.',
+      githubUrl: 'https://github.com/Arvind2607/tcu-telematics-page',
+      liveDemoUrl: '',
+      statusBadge: 'Automotive Tech',
       featured: true,
     },
     {
