@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="doorBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0d"/>
+      <stop offset="100%" stop-color="#14141c"/>
+    </linearGradient>
+    <linearGradient id="crimsonAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff263b"/>
+      <stop offset="100%" stop-color="#b00615"/>
+    </linearGradient>
+    <filter id="lockGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#e50920" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#doorBg)"/>
+
+  <!-- Subtle grid lines -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="125" x2="800" y2="125"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="266" y1="0" x2="266" y2="500"/>
+    <line x1="533" y1="0" x2="533" y2="500"/>
+  </g>
+
+  <!-- Left Header & Info -->
+  <text x="50" y="55" fill="#e50920" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" letter-spacing="3">EMBEDDED &amp; IOT SECURITY</text>
+  <text x="260" y="55" fill="#666675" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="2">• SMART ACCESS CONTROL</text>
+  <line x1="50" y1="75" x2="750" y2="75" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+
+  <text x="50" y="145" fill="#ffffff" font-family="'Bebas Neue', sans-serif" font-size="52" font-weight="900" letter-spacing="2">AUTOMATIC DOOR</text>
+  <text x="50" y="195" fill="#e50920" font-family="'Bebas Neue', sans-serif" font-size="52" font-weight="900" letter-spacing="2">LOCKING SYSTEM</text>
+
+  <text x="50" y="240" fill="#8e92a0" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">Smart access automation powered by sensor detection,</text>
+  <text x="50" y="262" fill="#8e92a0" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">proximity verification, micro-controller servo latching,</text>
+  <text x="50" y="284" fill="#8e92a0" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">and real-time tamper alert protocols.</text>
+
+  <!-- Tags -->
+  <g transform="translate(50, 320)">
+    <rect x="0" y="0" width="88" height="26" rx="4" fill="#181a22" stroke="#ffffff" stroke-opacity="0.1"/>
+    <text x="44" y="17" fill="#e4e4e7" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" text-anchor="middle">EMBEDDED C</text>
+
+    <rect x="98" y="0" width="94" height="26" rx="4" fill="#181a22" stroke="#ffffff" stroke-opacity="0.1"/>
+    <text x="145" y="17" fill="#e4e4e7" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" text-anchor="middle">SENSORS/ACTUATOR</text>
+
+    <rect x="202" y="0" width="82" height="26" rx="4" fill="#181a22" stroke="#ffffff" stroke-opacity="0.1"/>
+    <text x="243" y="17" fill="#e4e4e7" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" text-anchor="middle">HARDWARE</text>
+  </g>
+
+  <!-- Status pill -->
+  <g transform="translate(50, 385)">
+    <rect x="0" y="0" width="180" height="38" rx="19" fill="#14151c" stroke="#e50920" stroke-width="1.5"/>
+    <circle cx="24" cy="19" r="5" fill="#10b981"/>
+    <text x="38" y="23" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" letter-spacing="1">SYSTEM SECURED</text>
+  </g>
+
+  <!-- Right Visual: Digital Lock Hud -->
+  <g transform="translate(450, 110)" filter="url(#lockGlow)">
+    <!-- Lock chassis card -->
+    <rect x="0" y="0" width="300" height="330" rx="16" fill="#12131a" stroke="#e50920" stroke-opacity="0.4" stroke-width="1.5"/>
+
+    <!-- Padlock Graphic -->
+    <g transform="translate(100, 35)">
+      <!-- Shackle -->
+      <path d="M 25 55 L 25 35 C 25 15, 75 15, 75 35 L 75 55" fill="none" stroke="#e50920" stroke-width="12" stroke-linecap="round"/>
+      <!-- Body -->
+      <rect x="0" y="50" width="100" height="90" rx="14" fill="url(#crimsonAccent)"/>
+      <circle cx="50" cy="90" r="10" fill="#080808"/>
+      <rect x="47" y="90" width="6" height="24" rx="2" fill="#080808"/>
+    </g>
+
+    <!-- State readout -->
+    <text x="150" y="210" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" text-anchor="middle" letter-spacing="2">LATCH STATUS: LOCKED</text>
+    <text x="150" y="230" fill="#8e92a0" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" text-anchor="middle">AUTOLOCK DELAY: 3.5s</text>
+
+    <!-- Keypad preview -->
+    <g transform="translate(60, 250)">
+      <rect x="0" y="0" width="50" height="24" rx="4" fill="#1f222e"/>
+      <text x="25" y="16" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" text-anchor="middle">RFID</text>
+
+      <rect x="65" y="0" width="50" height="24" rx="4" fill="#1f222e"/>
+      <text x="90" y="16" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" text-anchor="middle">SERVO</text>
+
+      <rect x="130" y="0" width="50" height="24" rx="4" fill="#e50920"/>
+      <text x="155" y="16" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" text-anchor="middle">ACTIVE</text>
+    </g>
+  </g>
+</svg>

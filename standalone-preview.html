@@ -200,10 +200,10 @@
           <div class="flex flex-col gap-6 w-full">
             <div class="flex items-baseline gap-3.5">
               <span class="font-display font-black text-4xl sm:text-5xl text-[#e50920] leading-none min-w-[70px]">
-                3+
+                7+
               </span>
               <span class="text-[10px] sm:text-[11px] font-black tracking-[0.18em] text-[#f5f5f5] uppercase leading-tight font-sans">
-                FOCUS<br>DOMAINS
+                GITHUB<br>PROJECTS
               </span>
             </div>
 
@@ -240,31 +240,43 @@
   </section>
 
   <!-- =============================================================
-       SECTION C — SELECTED PROJECTS (3 Landscape Cards)
+       SECTION C — SELECTED PROJECTS (Featured & Verified GitHub Work)
        ============================================================= -->
   <section id="projects" class="py-16 sm:py-20 bg-[#080808] border-b border-white/10" aria-label="Selected Projects">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
       <div class="flex items-center justify-between gap-6 mb-10 sm:mb-14">
-        <h2 class="text-white font-extrabold text-sm sm:text-base tracking-[0.2em] uppercase whitespace-nowrap">
-          SELECTED PROJECTS
-        </h2>
+        <div class="flex items-center gap-3">
+          <h2 class="text-white font-extrabold text-sm sm:text-base tracking-[0.2em] uppercase whitespace-nowrap">
+            SELECTED PROJECTS
+          </h2>
+          <span class="text-[11px] font-bold text-[#e50920] bg-[#e50920]/10 px-2 py-0.5 rounded">
+            7 Projects
+          </span>
+        </div>
+
         <div class="flex-grow h-px bg-white/15 hidden sm:block"></div>
-        <a href="https://github.com/Arvind2607" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-2 text-xs font-bold tracking-[0.18em] uppercase text-[#a5a5a5] hover:text-[#e50920] transition-colors whitespace-nowrap">
-          <span>VIEW ALL PROJECTS</span>
-          <span class="transform group-hover:translate-x-1 transition-transform">→</span>
-        </a>
+
+        <div class="flex items-center gap-4">
+          <button id="toggle-all-projects-btn" type="button" class="text-xs font-bold tracking-[0.18em] uppercase text-[#e50920] hover:text-[#ff263b] transition-colors whitespace-nowrap">
+            View All (7)
+          </button>
+          <a href="https://github.com/Arvind2607" target="_blank" rel="noopener noreferrer" class="group hidden sm:flex items-center gap-2 text-xs font-bold tracking-[0.18em] uppercase text-[#a5a5a5] hover:text-[#e50920] transition-colors whitespace-nowrap">
+            <span>GitHub</span>
+            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+          </a>
+        </div>
       </div>
 
-      <!-- 3 Horizontal Project Cards on Desktop -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <!-- Horizontal Project Cards Grid -->
+      <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         
         <!-- CARD 01: FOOD DELIVERY TIME PREDICTION -->
         <article class="project-card group cursor-pointer flex flex-col focus:outline-none focus:ring-2 focus:ring-[#e50920] rounded-lg" data-project="0" tabindex="0">
           <div class="relative w-full aspect-[16/10] bg-[#111111] border border-white/10 rounded-sm overflow-hidden mb-4 transition-all duration-300 group-hover:border-[#e50920]/60 shadow-[0_10px_30px_rgba(0,0,0,0.6)]">
             <img src="public/assets/images/project-fooddelivery.svg" alt="Food Delivery Time Predictor" class="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-105" loading="lazy">
-            <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-[#080808]/80 backdrop-blur-md border border-white/15 text-[10px] font-bold text-[#f5f5f5] tracking-wider uppercase">
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-[#080808]/85 backdrop-blur-md border border-white/15 text-[10px] font-bold text-[#f5f5f5] tracking-wider uppercase">
               Live Deployed
             </div>
           </div>
@@ -286,12 +298,12 @@
           </div>
         </article>
 
-        <!-- CARD 02: CAN BUS TELEMETRY DECODER -->
+        <!-- CARD 02: AUTOMATIC DOOR LOCKING SYSTEM -->
         <article class="project-card group cursor-pointer flex flex-col focus:outline-none focus:ring-2 focus:ring-[#e50920] rounded-lg" data-project="1" tabindex="0">
           <div class="relative w-full aspect-[16/10] bg-[#111111] border border-white/10 rounded-sm overflow-hidden mb-4 transition-all duration-300 group-hover:border-[#e50920]/60 shadow-[0_10px_30px_rgba(0,0,0,0.6)]">
-            <img src="public/assets/images/project-telemetry.svg" alt="CAN Bus Telemetry Decoder" class="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-105" loading="lazy">
-            <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-[#080808]/80 backdrop-blur-md border border-white/15 text-[10px] font-bold text-[#f5f5f5] tracking-wider uppercase">
-              Automotive Tech
+            <img src="public/assets/images/project-doorlock.svg" alt="Automatic Door Locking System" class="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-[#080808]/85 backdrop-blur-md border border-white/15 text-[10px] font-bold text-[#f5f5f5] tracking-wider uppercase">
+              Embedded / IoT
             </div>
           </div>
           <div class="flex items-start justify-between gap-4 pt-1">
@@ -299,10 +311,10 @@
               <span class="font-display font-black text-2xl sm:text-3xl text-[#e50920] leading-none shrink-0">02</span>
               <div class="flex flex-col">
                 <h3 class="font-sans text-white font-extrabold text-sm sm:text-base uppercase tracking-wider group-hover:text-[#e50920] transition-colors leading-tight">
-                  CAN BUS TELEMETRY DECODER
+                  AUTOMATIC DOOR LOCKING SYSTEM
                 </h3>
                 <p class="text-[#a5a5a5] text-[11px] sm:text-xs font-semibold uppercase tracking-wider mt-0.5">
-                  AUTOMOTIVE SYSTEMS &amp; C++
+                  SMART ACCESS &amp; SENSOR SECURITY
                 </p>
               </div>
             </div>
@@ -312,12 +324,12 @@
           </div>
         </article>
 
-        <!-- CARD 03: EV POWERTRAIN & SENSOR MONITOR -->
+        <!-- CARD 03: TCU DASHBOARD & TELEMATICS CONSOLE -->
         <article class="project-card group cursor-pointer flex flex-col focus:outline-none focus:ring-2 focus:ring-[#e50920] rounded-lg" data-project="2" tabindex="0">
           <div class="relative w-full aspect-[16/10] bg-[#111111] border border-white/10 rounded-sm overflow-hidden mb-4 transition-all duration-300 group-hover:border-[#e50920]/60 shadow-[0_10px_30px_rgba(0,0,0,0.6)]">
-            <img src="public/assets/images/project-evpowertrain.svg" alt="EV Powertrain & Sensor Monitor" class="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-105" loading="lazy">
-            <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-[#080808]/80 backdrop-blur-md border border-white/15 text-[10px] font-bold text-[#f5f5f5] tracking-wider uppercase">
-              Embedded Systems
+            <img src="public/assets/images/project-tcupage.svg" alt="TCU Dashboard & Telematics" class="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-[#080808]/85 backdrop-blur-md border border-white/15 text-[10px] font-bold text-[#f5f5f5] tracking-wider uppercase">
+              Automotive Tech
             </div>
           </div>
           <div class="flex items-start justify-between gap-4 pt-1">
@@ -325,10 +337,114 @@
               <span class="font-display font-black text-2xl sm:text-3xl text-[#e50920] leading-none shrink-0">03</span>
               <div class="flex flex-col">
                 <h3 class="font-sans text-white font-extrabold text-sm sm:text-base uppercase tracking-wider group-hover:text-[#e50920] transition-colors leading-tight">
-                  EV POWERTRAIN MONITOR
+                  TCU TELEMATICS CONSOLE
                 </h3>
                 <p class="text-[#a5a5a5] text-[11px] sm:text-xs font-semibold uppercase tracking-wider mt-0.5">
-                  EMBEDDED SYSTEMS &amp; IOT
+                  AUTOMOTIVE SYSTEMS &amp; TELEMETRY
+                </p>
+              </div>
+            </div>
+            <div class="text-white/60 group-hover:text-[#e50920] text-sm sm:text-base font-bold transform group-hover:translate-x-1.5 transition-all shrink-0 mt-0.5">
+              →
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 04: YHACK26 LASTMINUTE -->
+        <article class="extra-project hidden project-card group cursor-pointer flex flex-col focus:outline-none focus:ring-2 focus:ring-[#e50920] rounded-lg" data-project="3" tabindex="0">
+          <div class="relative w-full aspect-[16/10] bg-[#111111] border border-white/10 rounded-sm overflow-hidden mb-4 transition-all duration-300 group-hover:border-[#e50920]/60 shadow-[0_10px_30px_rgba(0,0,0,0.6)]">
+            <img src="public/assets/images/project-yhack.svg" alt="YHACK26 LastMinute" class="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-[#080808]/85 backdrop-blur-md border border-white/15 text-[10px] font-bold text-[#f5f5f5] tracking-wider uppercase">
+              Hackathon YHACK
+            </div>
+          </div>
+          <div class="flex items-start justify-between gap-4 pt-1">
+            <div class="flex items-baseline gap-3 sm:gap-4">
+              <span class="font-display font-black text-2xl sm:text-3xl text-[#e50920] leading-none shrink-0">04</span>
+              <div class="flex flex-col">
+                <h3 class="font-sans text-white font-extrabold text-sm sm:text-base uppercase tracking-wider group-hover:text-[#e50920] transition-colors leading-tight">
+                  YHACK26 LASTMINUTE
+                </h3>
+                <p class="text-[#a5a5a5] text-[11px] sm:text-xs font-semibold uppercase tracking-wider mt-0.5">
+                  RAPID PROTOTYPE &amp; SPRINT ENGINE
+                </p>
+              </div>
+            </div>
+            <div class="text-white/60 group-hover:text-[#e50920] text-sm sm:text-base font-bold transform group-hover:translate-x-1.5 transition-all shrink-0 mt-0.5">
+              →
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 05: SMARTMAP NAVIGATOR -->
+        <article class="extra-project hidden project-card group cursor-pointer flex flex-col focus:outline-none focus:ring-2 focus:ring-[#e50920] rounded-lg" data-project="4" tabindex="0">
+          <div class="relative w-full aspect-[16/10] bg-[#111111] border border-white/10 rounded-sm overflow-hidden mb-4 transition-all duration-300 group-hover:border-[#e50920]/60 shadow-[0_10px_30px_rgba(0,0,0,0.6)]">
+            <img src="public/assets/images/project-smartmap.svg" alt="SmartMap Navigator" class="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-[#080808]/85 backdrop-blur-md border border-white/15 text-[10px] font-bold text-[#f5f5f5] tracking-wider uppercase">
+              Navigation &amp; GIS
+            </div>
+          </div>
+          <div class="flex items-start justify-between gap-4 pt-1">
+            <div class="flex items-baseline gap-3 sm:gap-4">
+              <span class="font-display font-black text-2xl sm:text-3xl text-[#e50920] leading-none shrink-0">05</span>
+              <div class="flex flex-col">
+                <h3 class="font-sans text-white font-extrabold text-sm sm:text-base uppercase tracking-wider group-hover:text-[#e50920] transition-colors leading-tight">
+                  SMARTMAP NAVIGATOR
+                </h3>
+                <p class="text-[#a5a5a5] text-[11px] sm:text-xs font-semibold uppercase tracking-wider mt-0.5">
+                  GEOSPATIAL ROUTING &amp; WAYPOINT HUD
+                </p>
+              </div>
+            </div>
+            <div class="text-white/60 group-hover:text-[#e50920] text-sm sm:text-base font-bold transform group-hover:translate-x-1.5 transition-all shrink-0 mt-0.5">
+              →
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 06: HASKELL SELF ORDERING KIOSK -->
+        <article class="extra-project hidden project-card group cursor-pointer flex flex-col focus:outline-none focus:ring-2 focus:ring-[#e50920] rounded-lg" data-project="5" tabindex="0">
+          <div class="relative w-full aspect-[16/10] bg-[#111111] border border-white/10 rounded-sm overflow-hidden mb-4 transition-all duration-300 group-hover:border-[#e50920]/60 shadow-[0_10px_30px_rgba(0,0,0,0.6)]">
+            <img src="public/assets/images/project-haskellkiosk.svg" alt="Haskell Self-Ordering Kiosk" class="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-[#080808]/85 backdrop-blur-md border border-white/15 text-[10px] font-bold text-[#f5f5f5] tracking-wider uppercase">
+              Haskell (λ)
+            </div>
+          </div>
+          <div class="flex items-start justify-between gap-4 pt-1">
+            <div class="flex items-baseline gap-3 sm:gap-4">
+              <span class="font-display font-black text-2xl sm:text-3xl text-[#e50920] leading-none shrink-0">06</span>
+              <div class="flex flex-col">
+                <h3 class="font-sans text-white font-extrabold text-sm sm:text-base uppercase tracking-wider group-hover:text-[#e50920] transition-colors leading-tight">
+                  SELF ORDERING KIOSK
+                </h3>
+                <p class="text-[#a5a5a5] text-[11px] sm:text-xs font-semibold uppercase tracking-wider mt-0.5">
+                  FUNCTIONAL ARCHITECTURE (λ)
+                </p>
+              </div>
+            </div>
+            <div class="text-white/60 group-hover:text-[#e50920] text-sm sm:text-base font-bold transform group-hover:translate-x-1.5 transition-all shrink-0 mt-0.5">
+              →
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 07: MUSIC PLAYER -->
+        <article class="extra-project hidden project-card group cursor-pointer flex flex-col focus:outline-none focus:ring-2 focus:ring-[#e50920] rounded-lg" data-project="6" tabindex="0">
+          <div class="relative w-full aspect-[16/10] bg-[#111111] border border-white/10 rounded-sm overflow-hidden mb-4 transition-all duration-300 group-hover:border-[#e50920]/60 shadow-[0_10px_30px_rgba(0,0,0,0.6)]">
+            <img src="public/assets/images/project-musicplayer.svg" alt="Music Player" class="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-[#080808]/85 backdrop-blur-md border border-white/15 text-[10px] font-bold text-[#f5f5f5] tracking-wider uppercase">
+              Audio Web App
+            </div>
+          </div>
+          <div class="flex items-start justify-between gap-4 pt-1">
+            <div class="flex items-baseline gap-3 sm:gap-4">
+              <span class="font-display font-black text-2xl sm:text-3xl text-[#e50920] leading-none shrink-0">07</span>
+              <div class="flex flex-col">
+                <h3 class="font-sans text-white font-extrabold text-sm sm:text-base uppercase tracking-wider group-hover:text-[#e50920] transition-colors leading-tight">
+                  MUSIC PLAYER &amp; SPECTRUM
+                </h3>
+                <p class="text-[#a5a5a5] text-[11px] sm:text-xs font-semibold uppercase tracking-wider mt-0.5">
+                  WEB AUDIO &amp; MEDIA
                 </p>
               </div>
             </div>
@@ -339,6 +455,15 @@
         </article>
 
       </div>
+
+      <!-- Expand Button -->
+      <div id="expand-container" class="mt-12 text-center">
+        <button id="btn-show-all-projects" type="button" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#141418] hover:bg-[#1a1a22] border border-white/15 hover:border-[#e50920] text-white text-xs font-bold tracking-wider uppercase transition-all shadow-[0_4px_15px_rgba(0,0,0,0.5)]">
+          <span>Explore All 7 Projects</span>
+          <span class="text-[#e50920]">↓</span>
+        </button>
+      </div>
+
     </div>
   </section>
 
@@ -388,6 +513,7 @@
               <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">JAVA</span>
               <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">PYTHON</span>
               <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">C / C++</span>
+              <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">HASKELL (λ)</span>
               <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">HTML5 / CSS3</span>
               <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">REACT</span>
               <span class="px-3.5 py-1.5 rounded-sm bg-[#111111] border border-white/15 hover:border-[#e50920] text-[11px] font-bold tracking-wider text-[#e4e4e7] hover:text-[#e50920] transition-colors cursor-default select-none uppercase">TAILWIND CSS</span>
@@ -449,7 +575,7 @@
               </div>
               <div class="flex flex-col pt-0.5">
                 <h3 class="text-white font-black text-xs sm:text-sm tracking-wider uppercase">DEVELOP &amp; CODE</h3>
-                <p class="text-[#a5a5a5] text-xs leading-relaxed mt-1">Writing high-efficiency, clean, and structured code across C/C++, Python, Java, and modern web tools.</p>
+                <p class="text-[#a5a5a5] text-xs leading-relaxed mt-1">Writing high-efficiency, clean, and structured code across C/C++, Python, Java, Haskell, and modern web tools.</p>
               </div>
             </div>
 
@@ -707,14 +833,14 @@
 
   <!-- Vanilla JavaScript Interactions -->
   <script>
-    // 1. Projects Data for Modals
+    // 1. Projects Data for Modals (All 7 Verified Projects on GitHub)
     const projectsData = [
       {
         number: '01',
-        title: 'FOOD DELIVERY TIME PREDICTOR',
+        title: 'FOOD DELIVERY PREDICTOR',
         subtitle: 'MACHINE LEARNING & ESTIMATION SUITE',
         category: 'ML REGRESSION & DEPLOYED APP',
-        description: 'A full-stack predictive ML application engineered to forecast food delivery duration in real-time. Features multi-parameter regression models trained on weather conditions, traffic density, courier distance, and dispatch metrics.',
+        description: 'A full-stack predictive ML application deployed to forecast food delivery duration in real-time. Features multi-parameter regression models trained on weather conditions, traffic density, courier distance, and dispatch metrics.',
         image: 'public/assets/images/project-fooddelivery.svg',
         technologies: ['Python', 'Machine Learning', 'Scikit-Learn', 'Vercel Deployment'],
         metrics: 'Live deployed model with real-time inference and sub-second prediction latency.',
@@ -723,26 +849,74 @@
       },
       {
         number: '02',
-        title: 'CAN BUS TELEMETRY DECODER',
-        subtitle: 'EMBEDDED PROTOCOL & ADAS TELEMATICS',
-        category: 'AUTOMOTIVE SYSTEMS & C++',
-        description: 'A high-throughput vehicle telemetry packet parser written in modern C++ and C. Engineered for decoding raw binary CAN 2.0B / CAN-FD bus frames, parsing engine PIDs, and logging ADAS sensor payloads with minimal latency.',
-        image: 'public/assets/images/project-telemetry.svg',
-        technologies: ['C++', 'C', 'CAN Protocols', 'Embedded Systems', 'Telemetry'],
-        metrics: 'Sub-millisecond frame decoding; zero dynamic heap allocation in time-critical loops.',
-        githubUrl: 'https://github.com/Arvind2607/can-bus-telemetry-decoder',
+        title: 'AUTOMATIC DOOR LOCKING SYSTEM',
+        subtitle: 'SMART ACCESS & SENSOR SECURITY',
+        category: 'EMBEDDED SYSTEMS & IOT',
+        description: 'An automated smart access control system featuring proximity sensor detection, micro-controller servo latching, secure credential verification, and real-time tamper protection protocols.',
+        image: 'public/assets/images/project-doorlock.svg',
+        technologies: ['Embedded C', 'Microcontrollers', 'Sensors', 'Servo Actuators', 'IoT'],
+        metrics: 'Instant sub-second latching with auto-lock timer verification.',
+        githubUrl: 'https://github.com/Arvind2607/automatic-door-locking-system',
         liveDemoUrl: ''
       },
       {
         number: '03',
-        title: 'EV POWERTRAIN & SENSOR MONITOR',
-        subtitle: 'BATTERY MANAGEMENT & TELEMATICS',
-        category: 'EMBEDDED SYSTEMS & IOT',
-        description: 'Embedded monitoring architecture for electric vehicle powertrains. Collects real-time telemetry from battery management systems (BMS), cell temperature arrays, and motor RPM sensors with serial interface output.',
-        image: 'public/assets/images/project-evpowertrain.svg',
-        technologies: ['Embedded C', 'Microcontrollers', 'CAN Bus', 'Sensors', 'IoT'],
-        metrics: 'Continuous cyclic telemetry logging with automated thermal alert thresholds.',
-        githubUrl: 'https://github.com/Arvind2607/ev-powertrain-telematics',
+        title: 'TCU TELEMATICS CONSOLE',
+        subtitle: 'TELEMATICS CONTROL UNIT WEB DASHBOARD',
+        category: 'AUTOMOTIVE SYSTEMS & TELEMETRY',
+        description: 'In-vehicle Telematics Control Unit (TCU) management portal aggregating real-time CAN bus telemetry, GPS positioning, cellular modem connectivity status, and vehicle health diagnostics.',
+        image: 'public/assets/images/project-tcupage.svg',
+        technologies: ['Automotive Telematics', 'CAN Bus', 'Web Dashboard', 'Telemetry', 'IoT'],
+        metrics: 'Real-time CAN-FD packet stream monitoring and uplink status indicators.',
+        githubUrl: 'https://github.com/Arvind2607/tcu-telematics-page',
+        liveDemoUrl: ''
+      },
+      {
+        number: '04',
+        title: 'YHACK26 LASTMINUTE',
+        subtitle: 'RAPID PROTOTYPE & SPRINT ENGINE',
+        category: 'HACKATHON INNOVATION',
+        description: 'High-intensity hackathon sprint project built for YHACK26 (Team YS532). Engineered with modular full-stack architecture, rapid real-time state synchronization, and collaborative engineering.',
+        image: 'public/assets/images/project-yhack.svg',
+        technologies: ['Full-Stack', 'Hackathon Sprint', 'TypeScript', 'Node.js', 'Team YS532'],
+        metrics: 'Rapid MVP deployment under competitive 36-hour hackathon constraints.',
+        githubUrl: 'https://github.com/Arvind2607/YHACK26_YS532_LastMinute',
+        liveDemoUrl: ''
+      },
+      {
+        number: '05',
+        title: 'SMARTMAP NAVIGATOR',
+        subtitle: 'GEOSPATIAL ROUTING & WAYPOINT HUD',
+        category: 'MAPPING & PATHFINDING',
+        description: 'An interactive vector mapping and routing application. Computes optimal graph pathfinding algorithms, live road telemetry overlays, geospatial waypoint coordinate mapping, and navigation HUD.',
+        image: 'public/assets/images/project-smartmap.svg',
+        technologies: ['Geospatial GPS', 'Algorithms', 'Pathfinding', 'JavaScript', 'GIS API'],
+        metrics: 'Dynamic route re-calculation and turn-by-turn waypoint visual guidance.',
+        githubUrl: 'https://github.com/Arvind2607/smartmap-navigator',
+        liveDemoUrl: ''
+      },
+      {
+        number: '06',
+        title: 'SELF ORDERING KIOSK SYSTEM',
+        subtitle: 'FUNCTIONAL ARCHITECTURE IN HASKELL',
+        category: 'FUNCTIONAL ARCHITECTURE (λ)',
+        description: 'A purely functional self-ordering kiosk terminal system engineered in Haskell. Implemented using immutable state transformations, algebraic data types for menu catalogs, and receipt dispatch.',
+        image: 'public/assets/images/project-haskellkiosk.svg',
+        technologies: ['Haskell', 'Functional Programming', 'State Monad', 'Algebraic Types'],
+        metrics: '100% pure computational logic with zero runtime exceptions.',
+        githubUrl: 'https://github.com/Arvind2607/haskell-self-ordering-kiosk',
+        liveDemoUrl: ''
+      },
+      {
+        number: '07',
+        title: 'MUSIC PLAYER & SPECTRUM',
+        subtitle: 'AUDIO STREAMING & EQUALIZER SUITE',
+        category: 'WEB AUDIO & MEDIA',
+        description: 'A responsive digital audio player built with real-time frequency spectrum analysis, dynamic waveforms, customizable equalizer presets, and seamless queue management.',
+        image: 'public/assets/images/project-musicplayer.svg',
+        technologies: ['Web Audio API', 'JavaScript', 'Canvas', 'Equalizer DSP'],
+        metrics: 'High-fidelity audio playback with interactive 60 FPS spectrum visualizer.',
+        githubUrl: 'https://github.com/Arvind2607/music-player',
         liveDemoUrl: ''
       }
     ];
@@ -839,7 +1013,36 @@
       if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
     });
 
-    // 4. Copy Email Interaction
+    // 4. Toggle All 7 Projects vs Top 3
+    const toggleBtn = document.getElementById('toggle-all-projects-btn');
+    const expandBtn = document.getElementById('btn-show-all-projects');
+    const expandContainer = document.getElementById('expand-container');
+    const extraProjects = document.querySelectorAll('.extra-project');
+    let isAllVisible = false;
+
+    function toggleProjects() {
+      isAllVisible = !isAllVisible;
+      extraProjects.forEach(card => {
+        if (isAllVisible) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (isAllVisible) {
+        toggleBtn.textContent = 'Show Top 3';
+        expandContainer.classList.add('hidden');
+      } else {
+        toggleBtn.textContent = 'View All (7)';
+        expandContainer.classList.remove('hidden');
+      }
+    }
+
+    toggleBtn.addEventListener('click', toggleProjects);
+    if (expandBtn) expandBtn.addEventListener('click', toggleProjects);
+
+    // 5. Copy Email Interaction
     const copyBtn = document.getElementById('copy-email-btn');
     const copyText = document.getElementById('copy-text');
     const copyToast = document.getElementById('copy-toast');
@@ -858,7 +1061,7 @@
       }
     });
 
-    // 5. Back to Top Scroll
+    // 6. Back to Top Scroll
     document.getElementById('back-to-top').addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });

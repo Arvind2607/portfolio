@@ -32,7 +32,7 @@ export const portfolioData: PortfolioData = {
     
     // Choose between studio-lit portrait or campus photo:
     photoUrl: '/assets/images/hero-portrait-studio.jpg', // Studio portrait with black background and cinematic crimson rim light
-    alternatePhotoUrl: '/assets/images/arvind-portrait.jpg', // Campus portrait recently uploaded
+    alternatePhotoUrl: '/assets/images/arvind-portrait.jpg', // Campus portrait
     
     githubUsername: 'Arvind2607',
     
@@ -42,7 +42,7 @@ export const portfolioData: PortfolioData = {
       github: 'https://github.com/Arvind2607',
       // SPACE FOR LINKEDIN ID: Update with your exact LinkedIn username / vanity URL:
       linkedin: 'https://linkedin.com/in/YOUR_LINKEDIN_ID', 
-      phone: '', // Optional: Phone link
+      phone: '', 
       resume: '/assets/resume/Arvind_S_Resume.pdf',
     },
 
@@ -57,9 +57,9 @@ export const portfolioData: PortfolioData = {
     // Factual statistics and highlights
     stats: [
       {
-        value: '3+',
-        labelTop: 'FOCUS',
-        labelBottom: 'DOMAINS', // Automotive, Embedded, ADAS
+        value: '7+',
+        labelTop: 'GITHUB',
+        labelBottom: 'PROJECTS',
       },
       {
         value: 'B.Tech',
@@ -75,58 +75,119 @@ export const portfolioData: PortfolioData = {
   },
 
   // =================================================================
-  // 2. Selected Projects (3 Landscape Cards Matching Reference)
+  // 2. Selected Projects (All 7 Verified Projects on GitHub)
   // =================================================================
   projects: [
     {
       id: 'project-food-delivery',
       number: '01',
-      title: 'FOOD DELIVERY TIME PREDICTOR',
+      title: 'FOOD DELIVERY PREDICTOR',
       subtitle: 'MACHINE LEARNING & ESTIMATION SUITE',
       category: 'ML REGRESSION & DEPLOYED APP',
       description:
-        'A full-stack predictive ML application engineered to forecast food delivery duration in real-time. Features multi-parameter regression models trained on weather conditions, traffic density, courier distance, and dispatch metrics.',
+        'A full-stack predictive ML application deployed to forecast food delivery duration in real-time. Features multi-parameter regression models trained on weather conditions, traffic density, courier distance, and dispatch metrics.',
       image: '/assets/images/project-fooddelivery.svg',
       technologies: ['Python', 'Machine Learning', 'Scikit-Learn', 'Vercel Deployment'],
       metrics: 'Live deployed model with real-time inference and sub-second prediction latency.',
-      // SPACE FOR GITHUB PROJECT REPO:
       githubUrl: 'https://github.com/Arvind2607/food-delivery-time-prediction',
       liveDemoUrl: 'https://food-rosy-nu.vercel.app/',
-      statusBadge: 'Deployed / Live',
+      statusBadge: 'Live Deployed',
       featured: true,
     },
     {
-      id: 'project-can-telemetry',
+      id: 'project-door-lock',
       number: '02',
-      title: 'CAN BUS TELEMETRY DECODER',
-      subtitle: 'EMBEDDED PROTOCOL & ADAS TELEMATICS',
-      category: 'AUTOMOTIVE SYSTEMS & C++',
+      title: 'AUTOMATIC DOOR LOCKING SYSTEM',
+      subtitle: 'SMART ACCESS & SENSOR SECURITY',
+      category: 'EMBEDDED SYSTEMS & IOT',
       description:
-        'A high-throughput vehicle telemetry packet parser written in modern C++ and C. Engineered for decoding raw binary CAN 2.0B / CAN-FD bus frames, parsing engine PIDs, and logging ADAS sensor payloads with minimal latency.',
-      image: '/assets/images/project-telemetry.svg',
-      technologies: ['C++', 'C', 'CAN Protocols', 'Embedded Systems', 'Telemetry'],
-      metrics: 'Sub-millisecond frame decoding; zero dynamic heap allocation in time-critical loops.',
-      // SPACE FOR GITHUB PROJECT REPO:
-      githubUrl: 'https://github.com/Arvind2607/can-bus-telemetry-decoder',
+        'An automated smart access control system featuring proximity sensor detection, micro-controller servo latching, secure credential verification, and real-time tamper protection protocols.',
+      image: '/assets/images/project-doorlock.svg',
+      technologies: ['Embedded C', 'Microcontrollers', 'Sensors', 'Servo Actuators', 'IoT'],
+      metrics: 'Instant sub-second latching with auto-lock timer verification.',
+      githubUrl: 'https://github.com/Arvind2607/automatic-door-locking-system',
+      liveDemoUrl: '',
+      statusBadge: 'Embedded / IoT',
+      featured: true,
+    },
+    {
+      id: 'project-tcu-page',
+      number: '03',
+      title: 'TCU TELEMATICS CONSOLE',
+      subtitle: 'TELEMATICS CONTROL UNIT WEB DASHBOARD',
+      category: 'AUTOMOTIVE SYSTEMS & TELEMETRY',
+      description:
+        'In-vehicle Telematics Control Unit (TCU) management portal aggregating real-time CAN bus telemetry, GPS positioning, cellular modem connectivity status, and vehicle health diagnostics.',
+      image: '/assets/images/project-tcupage.svg',
+      technologies: ['Automotive Telematics', 'CAN Bus', 'Web Dashboard', 'Telemetry', 'IoT'],
+      metrics: 'Real-time CAN-FD packet stream monitoring and uplink status indicators.',
+      githubUrl: 'https://github.com/Arvind2607/tcu-telematics-page',
       liveDemoUrl: '',
       statusBadge: 'Automotive Tech',
       featured: true,
     },
     {
-      id: 'project-ev-powertrain',
-      number: '03',
-      title: 'EV POWERTRAIN & SENSOR MONITOR',
-      subtitle: 'BATTERY MANAGEMENT & TELEMATICS',
-      category: 'EMBEDDED SYSTEMS & IOT',
+      id: 'project-yhack26',
+      number: '04',
+      title: 'YHACK26 LASTMINUTE',
+      subtitle: 'RAPID PROTOTYPE & SPRINT ENGINE',
+      category: 'HACKATHON INNOVATION',
       description:
-        'Embedded monitoring architecture for electric vehicle powertrains. Collects real-time telemetry from battery management systems (BMS), cell temperature arrays, and motor RPM sensors with serial interface output.',
-      image: '/assets/images/project-evpowertrain.svg',
-      technologies: ['Embedded C', 'Microcontrollers', 'CAN Bus', 'Sensors', 'IoT'],
-      metrics: 'Continuous cyclic telemetry logging with automated thermal alert thresholds.',
-      // SPACE FOR GITHUB PROJECT REPO:
-      githubUrl: 'https://github.com/Arvind2607/ev-powertrain-telematics',
+        'High-intensity hackathon sprint project built for YHACK26 (Team YS532). Engineered with modular full-stack architecture, rapid real-time state synchronization, and collaborative engineering.',
+      image: '/assets/images/project-yhack.svg',
+      technologies: ['Full-Stack', 'Hackathon Sprint', 'TypeScript', 'Node.js', 'Team YS532'],
+      metrics: 'Rapid MVP deployment under competitive 36-hour hackathon constraints.',
+      githubUrl: 'https://github.com/Arvind2607/YHACK26_YS532_LastMinute',
       liveDemoUrl: '',
-      statusBadge: 'Embedded Systems',
+      statusBadge: 'Hackathon YHACK',
+      featured: true,
+    },
+    {
+      id: 'project-smartmap',
+      number: '05',
+      title: 'SMARTMAP NAVIGATOR',
+      subtitle: 'GEOSPATIAL ROUTING & WAYPOINT HUD',
+      category: 'MAPPING & PATHFINDING',
+      description:
+        'An interactive vector mapping and routing application. Computes optimal graph pathfinding algorithms, live road telemetry overlays, geospatial waypoint coordinate mapping, and navigation HUD.',
+      image: '/assets/images/project-smartmap.svg',
+      technologies: ['Geospatial GPS', 'Algorithms', 'Pathfinding', 'JavaScript', 'GIS API'],
+      metrics: 'Dynamic route re-calculation and turn-by-turn waypoint visual guidance.',
+      githubUrl: 'https://github.com/Arvind2607/smartmap-navigator',
+      liveDemoUrl: '',
+      statusBadge: 'Navigation & GIS',
+      featured: true,
+    },
+    {
+      id: 'project-haskell-kiosk',
+      number: '06',
+      title: 'SELF ORDERING KIOSK SYSTEM',
+      subtitle: 'FUNCTIONAL ARCHITECTURE IN HASKELL',
+      category: 'FUNCTIONAL ARCHITECTURE (λ)',
+      description:
+        'A purely functional self-ordering kiosk terminal system engineered in Haskell. Implemented using immutable state transformations, algebraic data types for menu catalogs, and receipt dispatch.',
+      image: '/assets/images/project-haskellkiosk.svg',
+      technologies: ['Haskell', 'Functional Programming', 'State Monad', 'Algebraic Types'],
+      metrics: '100% pure computational logic with zero runtime exceptions.',
+      githubUrl: 'https://github.com/Arvind2607/haskell-self-ordering-kiosk',
+      liveDemoUrl: '',
+      statusBadge: 'Haskell (λ)',
+      featured: true,
+    },
+    {
+      id: 'project-music-player',
+      number: '07',
+      title: 'MUSIC PLAYER & SPECTRUM',
+      subtitle: 'AUDIO STREAMING & EQUALIZER SUITE',
+      category: 'WEB AUDIO & MEDIA',
+      description:
+        'A responsive digital audio player built with real-time frequency spectrum analysis, dynamic waveforms, customizable equalizer presets, and seamless queue management.',
+      image: '/assets/images/project-musicplayer.svg',
+      technologies: ['Web Audio API', 'JavaScript', 'Canvas', 'Equalizer DSP'],
+      metrics: 'High-fidelity audio playback with interactive 60 FPS spectrum visualizer.',
+      githubUrl: 'https://github.com/Arvind2607/music-player',
+      liveDemoUrl: '',
+      statusBadge: 'Audio Web App',
       featured: true,
     },
   ],
@@ -143,6 +204,7 @@ export const portfolioData: PortfolioData = {
       coursework: [
         'Data Structures & Algorithms',
         'Object-Oriented Programming (Java / C++)',
+        'Functional Programming (Haskell)',
         'Computer Systems Architecture',
         'Operating Systems',
         'Database Management Systems',
@@ -158,6 +220,7 @@ export const portfolioData: PortfolioData = {
     'JAVA',
     'PYTHON',
     'C / C++',
+    'HASKELL (λ)',
     'HTML5 / CSS3',
     'REACT',
     'TAILWIND CSS',
@@ -188,7 +251,7 @@ export const portfolioData: PortfolioData = {
     {
       step: '03',
       title: 'DEVELOP & CODE',
-      description: 'Writing high-efficiency, clean, and structured code across C/C++, Python, Java, and modern web tools.',
+      description: 'Writing high-efficiency, clean, and structured code across C/C++, Python, Java, Haskell, and modern web tools.',
       iconName: 'develop',
     },
     {
