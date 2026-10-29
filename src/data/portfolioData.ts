@@ -75,7 +75,7 @@ export const portfolioData: PortfolioData = {
   },
 
   // =================================================================
-  // 2. Selected Projects (All 7 Verified Projects on GitHub)
+  // 2. Selected Projects (Re-ordered: 2 & 3 swapped with 4 & 5)
   // =================================================================
   projects: [
     {
@@ -95,40 +95,8 @@ export const portfolioData: PortfolioData = {
       featured: true,
     },
     {
-      id: 'project-door-lock',
-      number: '02',
-      title: 'AUTOMATIC DOOR LOCKING SYSTEM',
-      subtitle: 'SMART ACCESS & SENSOR SECURITY',
-      category: 'EMBEDDED SYSTEMS & IOT',
-      description:
-        'An automated smart access control system featuring proximity sensor detection, micro-controller servo latching, secure credential verification, and real-time tamper protection protocols.',
-      image: '/assets/images/project-doorlock.svg',
-      technologies: ['Embedded C', 'Microcontrollers', 'Sensors', 'Servo Actuators', 'IoT'],
-      metrics: 'Instant sub-second latching with auto-lock timer verification.',
-      githubUrl: 'https://github.com/Arvind2607/automatic-door-locking-system',
-      liveDemoUrl: '',
-      statusBadge: 'Embedded / IoT',
-      featured: true,
-    },
-    {
-      id: 'project-tcu-page',
-      number: '03',
-      title: 'TCU TELEMATICS CONSOLE',
-      subtitle: 'TELEMATICS CONTROL UNIT WEB DASHBOARD',
-      category: 'AUTOMOTIVE SYSTEMS & TELEMETRY',
-      description:
-        'In-vehicle Telematics Control Unit (TCU) management portal aggregating real-time CAN bus telemetry, GPS positioning, cellular modem connectivity status, and vehicle health diagnostics.',
-      image: '/assets/images/project-tcupage.svg',
-      technologies: ['Automotive Telematics', 'CAN Bus', 'Web Dashboard', 'Telemetry', 'IoT'],
-      metrics: 'Real-time CAN-FD packet stream monitoring and uplink status indicators.',
-      githubUrl: 'https://github.com/Arvind2607/tcu-telematics-page',
-      liveDemoUrl: '',
-      statusBadge: 'Automotive Tech',
-      featured: true,
-    },
-    {
       id: 'project-yhack26',
-      number: '04',
+      number: '02',
       title: 'YHACK26 LASTMINUTE',
       subtitle: 'RAPID PROTOTYPE & SPRINT ENGINE',
       category: 'HACKATHON INNOVATION',
@@ -144,7 +112,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: 'project-smartmap',
-      number: '05',
+      number: '03',
       title: 'SMARTMAP NAVIGATOR',
       subtitle: 'GEOSPATIAL ROUTING & WAYPOINT HUD',
       category: 'MAPPING & PATHFINDING',
@@ -156,6 +124,38 @@ export const portfolioData: PortfolioData = {
       githubUrl: 'https://github.com/Arvind2607/smartmap-navigator',
       liveDemoUrl: '',
       statusBadge: 'Navigation & GIS',
+      featured: true,
+    },
+    {
+      id: 'project-door-lock',
+      number: '04',
+      title: 'AUTOMATIC DOOR LOCKING SYSTEM',
+      subtitle: 'SMART ACCESS & SENSOR SECURITY',
+      category: 'EMBEDDED SYSTEMS & IOT',
+      description:
+        'An automated smart access control system featuring proximity sensor detection, micro-controller servo latching, secure credential verification, and real-time tamper protection protocols.',
+      image: '/assets/images/project-doorlock.svg',
+      technologies: ['Embedded C', 'Microcontrollers', 'Sensors', 'Servo Actuators', 'IoT'],
+      metrics: 'Instant sub-second latching with auto-lock timer verification.',
+      githubUrl: 'https://github.com/Arvind2607/automatic-door-locking-system',
+      liveDemoUrl: '',
+      statusBadge: 'Embedded / IoT',
+      featured: true,
+    },
+    {
+      id: 'project-tcu-page',
+      number: '05',
+      title: 'TCU TELEMATICS CONSOLE',
+      subtitle: 'TELEMATICS CONTROL UNIT WEB DASHBOARD',
+      category: 'AUTOMOTIVE SYSTEMS & TELEMETRY',
+      description:
+        'In-vehicle Telematics Control Unit (TCU) management portal aggregating real-time CAN bus telemetry, GPS positioning, cellular modem connectivity status, and vehicle health diagnostics.',
+      image: '/assets/images/project-tcupage.svg',
+      technologies: ['Automotive Telematics', 'CAN Bus', 'Web Dashboard', 'Telemetry', 'IoT'],
+      metrics: 'Real-time CAN-FD packet stream monitoring and uplink status indicators.',
+      githubUrl: 'https://github.com/Arvind2607/tcu-telematics-page',
+      liveDemoUrl: '',
+      statusBadge: 'Automotive Tech',
       featured: true,
     },
     {
