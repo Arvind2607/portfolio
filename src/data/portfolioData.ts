@@ -75,7 +75,7 @@ export const portfolioData: PortfolioData = {
   },
 
   // =================================================================
-  // 2. Selected Projects (Updated Order: 5 & 6 swapped)
+  // 2. Selected Projects
   // =================================================================
   projects: [
     {
@@ -95,8 +95,24 @@ export const portfolioData: PortfolioData = {
       featured: true,
     },
     {
-      id: 'project-yhack26',
+      id: 'project-smartmap',
       number: '02',
+      title: 'SMARTMAP NAVIGATOR',
+      subtitle: 'GEOSPATIAL ROUTING & WAYPOINT HUD',
+      category: 'MAPPING & PATHFINDING',
+      description:
+        'An interactive vector mapping and routing application deployed on Vercel. Computes optimal graph pathfinding algorithms, live road telemetry overlays, geospatial waypoint coordinate mapping, and navigation HUD.',
+      image: '/assets/images/project-smartmap.svg',
+      technologies: ['Geospatial GPS', 'Algorithms', 'Pathfinding', 'JavaScript', 'Vercel Deployment'],
+      metrics: 'Live deployed geospatial app with dynamic route re-calculation and waypoint HUD.',
+      githubUrl: 'https://github.com/Arvind2607/smartmap-navigator',
+      liveDemoUrl: 'https://smartmap-navigator.vercel.app/',
+      statusBadge: 'Live Deployed',
+      featured: true,
+    },
+    {
+      id: 'project-yhack26',
+      number: '03',
       title: 'YHACK26 LASTMINUTE',
       subtitle: 'RAPID PROTOTYPE & SPRINT ENGINE',
       category: 'HACKATHON INNOVATION',
@@ -108,22 +124,6 @@ export const portfolioData: PortfolioData = {
       githubUrl: 'https://github.com/Arvind2607/YHACK26_YS532_LastMinute',
       liveDemoUrl: '',
       statusBadge: 'Hackathon YHACK',
-      featured: true,
-    },
-    {
-      id: 'project-smartmap',
-      number: '03',
-      title: 'SMARTMAP NAVIGATOR',
-      subtitle: 'GEOSPATIAL ROUTING & WAYPOINT HUD',
-      category: 'MAPPING & PATHFINDING',
-      description:
-        'An interactive vector mapping and routing application. Computes optimal graph pathfinding algorithms, live road telemetry overlays, geospatial waypoint coordinate mapping, and navigation HUD.',
-      image: '/assets/images/project-smartmap.svg',
-      technologies: ['Geospatial GPS', 'Algorithms', 'Pathfinding', 'JavaScript', 'GIS API'],
-      metrics: 'Dynamic route re-calculation and turn-by-turn waypoint visual guidance.',
-      githubUrl: 'https://github.com/Arvind2607/smartmap-navigator',
-      liveDemoUrl: '',
-      statusBadge: 'Navigation & GIS',
       featured: true,
     },
     {
