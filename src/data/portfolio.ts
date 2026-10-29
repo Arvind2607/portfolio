@@ -55,14 +55,14 @@ export const portfolioData: PortfolioData = {
 
     stats: [
       {
-        value: '7.0',
-        labelTop: 'CURRENT',
-        labelBottom: 'CGPA',
-      },
-      {
         value: '3rd',
         labelTop: 'YEAR CSE',
         labelBottom: 'AMRITA UNIV',
+      },
+      {
+        value: '6+',
+        labelTop: 'FEATURED',
+        labelBottom: 'PROJECTS',
       },
       {
         value: '100%',
@@ -183,7 +183,6 @@ export const portfolioData: PortfolioData = {
       degree: 'B.Tech in Computer Science & Engineering',
       institution: 'Amrita Vishwa Vidyapeetham, Nagercoil',
       period: '2024 – Present',
-      cgpa: '7.0 CGPA',
       coursework: [
         'Data Structures & Algorithms',
         'Object-Oriented Programming (Java / C++)',

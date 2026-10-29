@@ -11,8 +11,8 @@ interface HeroSectionProps {
 export function HeroSection({ personal }: HeroSectionProps) {
   // Stat values strictly from verified existing data
   const statsList = [
-    { value: '7.0', label: 'CGPA' },
     { value: '3rd', label: 'YEAR CSE • AMRITA UNIV' },
+    { value: '6+', label: 'PROJECTS & SPRINT APPS' },
     { value: '100%', label: 'COMMITMENT & PRECISION' },
   ];
 

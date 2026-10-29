@@ -41,11 +41,6 @@ export function EducationSkills({
                       <span className="font-mono text-xs text-[#e50920] uppercase tracking-wider font-semibold">
                         {item.period}
                       </span>
-                      {item.cgpa && (
-                        <span className="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20 self-start sm:self-auto">
-                          {item.cgpa}
-                        </span>
-                      )}
                     </div>
 
                     <h3 className="font-display text-2xl sm:text-3xl text-white tracking-wide mb-1">
