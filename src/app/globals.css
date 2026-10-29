@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Caveat:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-dark: #080808;
+  --bg-surface: #0f1014;
+  --bg-card: #13151b;
+  --bg-card-hover: #191b24;
+  --crimson: #e50920;
+  --crimson-hover: #ff1e35;
+  --crimson-glow: rgba(229, 9, 32, 0.4);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(229, 9, 32, 0.5);
+  --text-white: #ffffff;
+  --text-muted: #9ca3af;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #080808;
+  color: #f5f5f5;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #080808;
+  color: #f5f5f5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #232733;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e50920;
+}
+
+/* Crimson glowing effects */
+.crimson-glow-sm {
+  box-shadow: 0 0 20px rgba(229, 9, 32, 0.25);
+}
+
+.crimson-glow-lg {
+  box-shadow: 0 0 50px rgba(229, 9, 32, 0.35);
+}
+
+.text-stroke-crimson {
+  -webkit-text-stroke: 1.5px rgba(229, 9, 32, 0.3);
+  color: transparent;
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+  color: transparent;
+}
+
+/* Subtle grid backdrop */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

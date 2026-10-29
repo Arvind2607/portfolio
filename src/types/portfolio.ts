@@ -1,6 +1,6 @@
 /**
  * Portfolio Data Models & Type Definitions
- * Tailored for Arvind SB — Automotive Software, Embedded & ADAS Developer
+ * Tailored for Arvind SB — Competitive Programming, Software Engineering & Systems
  */
 
 export type AvailabilityType = 'open' | 'collaborate' | 'busy';
@@ -14,9 +14,10 @@ export interface AvailabilityStatus {
 export interface SocialLinks {
   email: string;
   github: string;
-  linkedin: string;
+  linkedin?: string;
   phone?: string;
   resume?: string;
+  twitter?: string;
 }
 
 export interface StatItem {
@@ -25,8 +26,25 @@ export interface StatItem {
   labelBottom: string;
 }
 
+export interface InternshipItem {
+  id: string;
+  role: string;
+  company: string;
+  period: string;
+  highlights: string[];
+}
+
+export interface CertificationItem {
+  id: string;
+  title: string;
+  issuer: string;
+  issueDate?: string;
+  credentialUrl?: string;
+}
+
 export interface PersonalInfo {
-  name: string;
+  fullName: string;
+  displayName: string;
   initials: string;
   roleTag: string;
   roleSubtitle: string;
@@ -40,6 +58,7 @@ export interface PersonalInfo {
   resumeUrl: string;
   resumeFilename: string;
   photoUrl: string;
+  cutoutPhotoUrl?: string;
   alternatePhotoUrl?: string;
   socials: SocialLinks;
   githubUsername: string;
@@ -50,7 +69,7 @@ export interface PersonalInfo {
 
 export interface Project {
   id: string;
-  number: string; // e.g. "01", "02", "03"
+  number: string;
   title: string;
   subtitle: string;
   category: string;
@@ -58,8 +77,8 @@ export interface Project {
   image: string;
   technologies: string[];
   metrics?: string;
-  githubUrl: string; // Repository URL or placeholder
-  liveDemoUrl?: string; // Live URL if deployed
+  githubUrl: string;
+  liveDemoUrl?: string;
   statusBadge?: string;
   featured: boolean;
 }
@@ -69,12 +88,13 @@ export interface EducationItem {
   degree: string;
   institution: string;
   period: string;
+  cgpa?: string;
   coursework?: string[];
   achievements?: string[];
 }
 
 export interface WorkProcessStep {
-  step: string; // "01", "02", ...
+  step: string;
   title: string;
   description: string;
   iconName: 'discover' | 'plan' | 'develop' | 'validate' | 'deploy';
@@ -91,7 +111,10 @@ export interface PortfolioData {
   personal: PersonalInfo;
   projects: Project[];
   education: EducationItem[];
+  internships?: InternshipItem[];
+  achievements?: string[];
   skills: string[];
+  certifications?: CertificationItem[];
   workProcess: WorkProcessStep[];
   personalQuote: PersonalQuote;
 }
