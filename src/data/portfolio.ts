@@ -206,7 +206,7 @@ export const portfolioData: PortfolioData = {
   ],
 
   // =================================================================
-  // 4. Internship Experience
+  // 4. Internship & Industry Experience
   // =================================================================
   internships: [
     {
@@ -221,15 +221,35 @@ export const portfolioData: PortfolioData = {
         'Completed real-time coding tasks and problem-solving assignments during internship.',
       ],
     },
+    {
+      id: 'intern-deloitte',
+      role: 'Cyber Job Simulation',
+      company: 'Deloitte (via Forage)',
+      period: 'April 2026',
+      highlights: [
+        'Completed practical simulation tasks in enterprise Cybersecurity protocols and analysis.',
+        'Investigated cybersecurity threats, formulated incident defense, and evaluated risk postures.',
+        'Verified Credential ID: MiQonRKDQCC5nmuhq (Certificate of Completion).',
+      ],
+    },
+    {
+      id: 'intern-third-bridge',
+      role: 'Client Service Delivery Simulation',
+      company: 'Third Bridge (via Forage)',
+      period: 'April 2026',
+      highlights: [
+        'Conducted structured analysis to break down complex client requests and pinpoint specialist experts.',
+        'Drafted high-impact expert consultation profiles and delivered persuasive client pitches.',
+        'Verified Credential ID: 8M5hK5iw342DXMNxc (Certificate of Completion).',
+      ],
+    },
   ],
 
   // =================================================================
-  // 5. Verified Achievements & Certifications
+  // 5. Verified Achievements
   // =================================================================
   achievements: [
     "Participant — Y'HACK '26 National Level 24-Hour Hackathon (IEEE Robotics & Automation Society / KPRIET)",
-    'Deloitte — Cyber Job Simulation Certificate (Cybersecurity)',
-    'Third Bridge — Client Service Delivery Job Simulation Certificate',
     'Participant — VISA 24-Hour AI Hackathon (IIT Madras)',
     'Participant — AI Safety Conclave 2025',
     'Student Poster Presentation — IEEE ICRM 2025',
